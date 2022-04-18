@@ -395,7 +395,7 @@ h1{
         "g-fotos-izquierda g-fotos-central1"
         "g-fotos-central2 g-fotos-derecha";
         }     
-       
+    }
 
     /*macro*/
     @media screen and (min-width:1200px){
@@ -415,4 +415,3 @@ h1{
             display:none;
         }
     }
-    
