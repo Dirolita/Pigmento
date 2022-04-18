@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Es-es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
         <div class="product">
 
                 <div class="image">
-                    <img src="img/lienzo-caballete.svg" alt="">
+                    <img src="../../assets/images/lupa.png" alt="">
                 </div>
 
                 <div class="description">
@@ -28,8 +28,26 @@
                         <h2>Nombre del producto</h2>
                     </div>
                     <div class="description_edit_cancel">
-                        <p>Editar</p>
-                        <p>Remover</p>
+                        <div class="description_edit">
+                            <a href="">Editar</a>
+                        </div>
+                        <div class="description_cancel">
+                            <a href="#modal" class="cta">Remover</a>
+                        </div>
+
+                        <section id="modal" class="modal">
+                            <div class="modalContainer">
+                                <h2 class="modalTitle">¿Seguro que quiere eliminar este artículo del carrito?</h2>
+                                <figure class="modalPicture">
+                                    <img src="../../assets/images/lupa.png" class="modalImg" alt="modalImg">
+                                </figure>
+                                
+                                <a href="../../pages/galeria.html" class="modalClose">Si, no lo quiero</a>
+                                <a href="compras.html" class="modalClose">No, quiero conservarlo</a>     
+                            </div>
+                        </section>
+
+
                     </div>
                     <div class="description_price_unit">
                         <h3>Precio und.</h3>
@@ -50,7 +68,7 @@
         <div class="summary">
             <h2>Resumen del pedido</h2>
        
-                <div class="summary_totalpar">
+                <div class="summary_subtotal">
                     <p>Total parcial</p>
                     <p>$18.000</p>
                 </div>
@@ -62,11 +80,11 @@
                     <p>Total</p>
                     <p>$22.000</p>
                 </div>
-                <div class="summary_boton1">
+                <div class="summary_boton_one">
                     <a href="index.html"><button>Seguir comprando</button></a>
                 </div>
-                <div class="summary_boton2">
-                    <a href="datos_envio.html"><button>Hacer compra</button></a>
+                <div class="summary_boton_two">
+                    <a href="datos_envio.html"><button>Finalizar compra</button></a>
                 </div>
 
          </div>  
