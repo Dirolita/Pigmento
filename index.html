@@ -22,16 +22,15 @@
         <i class="fa-solid fa-bars" ></i>
         </label>
             <li class="item"><a href="index.html">Inicio</a></li>
-            <li class="item"><a href="index.html">Galeria</a></li>
-            <li class="item"><a href="index.html">Productos</a></li>
-            <li class="item"><a href="index.html">Talleres</a></li>
+            <li class="item"><a href="src/pages/galeria.html">Galeria</a></li>
+            <li class="item"><a href="src/pages/productos/productos.html">Productos</a></li>
+            <li class="item"><a href="src/pages/talleres.html">Talleres</a></li>
             <li class="item">
                <select>
-                <option value="0" >Tu Cuenta</option>
-                <option value="1" >Crear Cuenta</option></select>
+                <option value="0" ><a href="src/pages/login.html">Tu Cuenta</a></option>
+                <option value="1" ><a href="src/pages/registro.html">Crear Cuenta</a></option></select>
                 </li>
             <li class="item"><input  type="text" placeholder="Buscar"><img  src="src/assets/images/lupa.png"></li>
-      
     </nav>
 </header>
 <p></p>
@@ -46,15 +45,15 @@
     <div class="inner">
         <div class="slide slide_1">
             <div class="slide-contenido"> 
-                <h1>SLIDE 1</h1>
-                <p>Parrafo 1</p>
+                <h2>Registrate</h2>
+                <p>Conoce los beneficios por ser parte de nuestra comunidad de artistas</p>
             </div>
         </div>
     
         <div class="slide slide_2">
             <div class="slide-contenido"> 
-                <h1>SLIDE 2</h1>
-                <p>Parrafo 2</p>
+                <h2>¡AGENDATE!</h2>
+                <p>Estaremos participando el proximo 20 y 21 de junio en la feria empresarial "Buro" en la Calle 125 #21-45 de 9am a 7pm</p>
             </div>
         </div>
     
@@ -87,6 +86,90 @@
         <label for="slider3"></label>
         <label for="slider4"></label>
     </div>
+
+    <section>
+    <div class="i-titulo-sec">
+        <h1><a href="src/pages/galeria.html">Galeria</a></h1>
+        <p>"Añade color y arte a tu vida"</p>
+    </div>
+    
+    <div class="i-index-sec">
+    <div class="i-img-galeria-one">
+        <img src="src/assets/images/indexgaleria1.png" alt="">
+    </div>
+
+    <div class="i-img-galeria">
+        <img src="src/assets/images/indexgaleria2.png" alt="">
+    </div>
+
+    <div class="i-img-galeria">
+        <img src="src/assets/images/indexgaleria3.png" alt="">
+    </div>
+</div>
+</section>
+
+
+<section>
+    <div class="i-titulo-sec">
+        <h1><a href="src/pages/galeria.html">Productos</a></h1>
+        <p>"Un buen artista siempre usa las mejores herramientas"</p>
+    </div>
+    
+    <div class="i-index-sec">
+    <div class="i-img-galeria-one">
+        <img src="src/assets/images/indexproductos1.png" alt="">
+    </div>
+
+    <div class="i-img-galeria">
+        <img src="src/assets/images//indexproductos2.png" alt="">
+    </div>
+
+    <div class="i-img-galeria">
+        <img src="src/assets/images/indexproductos3.png" alt="">
+    </div>
+</div>
+</section>
+
+<section>
+    <div class="i-titulo-sec">
+        <h1><a href="src/pages/galeria.html">Talleres</a></h1>
+        <p>"El aprendizaje continuo es el camino al éxito"</p>
+    </div>
+    
+    <div class="i-index-sec-talleres">
+    <div class="i-img-galeria-one">
+        <div class="contenedor">
+            <figure>
+                <img src="src/assets/images/indextalleres2.png" alt="">
+                <div class="capa">
+                    <h1>Clases Presenciales</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aperiam dolore obcaecati ipsa explicabo, praesentium.</p>
+                </div>
+            </figure>
+        </div>
+    </div>
+
+    <div>
+        <div class="contenedor">
+            <figure>
+                <img src="src/assets/images/indextarlleres1.png" alt="">
+                <div class="capa">
+                    <h1>Clases Virtuales</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aperiam dolore.</p>
+                </div>
+            </figure>
+    </div>
+
+    
+</div>
+</section>
+
+
+
+
+
+
+
     <footer>
         <section class="footer-op">
             <img src="src/assets/images/Line 1.svg">
@@ -104,7 +187,7 @@
                 <article class="footer-info">
                     <h2 class="footer-title">ENVIOS</h2>
                     <ul>
-                        <li>Bogota</li>
+                        <li>Bogotá</li>
                         <li>Pereira</li>
                         <li>Medellin</li>
                     </ul>
@@ -118,7 +201,7 @@
                     </div>
                 </article>
                 <article class="footer-info">
-                    <h2 class="footer-title">CONTACTANOS</h2>
+                    <h2 class="footer-title">CONTÁCTANOS</h2>
                     <form id="footer-form">
                         <input class="footer-form-input" type="email" placeholder="correo electronico" >
                         <textarea  name="mensaje" placeholder="Escribe aqui tu mensaje"></textarea><br>
