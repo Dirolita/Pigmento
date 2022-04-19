@@ -13,7 +13,7 @@ html{
     --cafemasoscuro-color: #301309;
     --amarillo-color: #F9D544;
   }
-  header, body{font-family: 'Baloo 2', cursive;}
+  header, body, footer{font-family: 'Baloo 2', cursive;}
 h1{
     color: var(--cafeoscuro-color);
     font-size: 32pt;
@@ -265,11 +265,6 @@ h1{
     width: 100%;
     display: block;
 }
-
-.modalTitle--Bold{
-    font-size: 1.5rem;
-    font-weight: 1000;
-}
 .modalP{
     margin-top: 1em;
     margin-bottom: 1em;
@@ -278,15 +273,198 @@ h1{
     display: flex;
     justify-content: center;*/
 }
-.modalClose{
+.g-modalClose{
     display: inline-block;
-    border: 1px solid #333;
-    padding: 1em 2em;
-    text-decoration: none;
-    font-weight: 700;
     color: #333;
     border-radius: 0.4em;
+    border: 1px solid #3333;
+    padding: 8px 8px;
+    text-decoration: none;
+    background-color:var(--amarillo-color);
+    font-weight: 300;
+    color: var(--cafeoscuro-color);
+    border-radius: 0.4em;
+    margin: 0 0.5em;
 }
+
+
+
+/*---------------------------------header y nav bar-----------------------------------------------------------*/
+#box-header{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.logo{
+    display: flex;
+    text-align: center;
+    margin: 0px 20px;
+}
+.logo h1{
+    font-family:'Dancing Script', cursive;
+    color: var(--amarillo-color);
+    font-size: 35px;
+    text-shadow: 0px 0px 2px black;
+}
+.menu li{
+
+    list-style: none;
+    display: none;
+}
+.menu a{
+    text-decoration: none;
+    color: #301309;
+}
+.menu li, select{
+    border: none;
+    font-size: 14px;
+}
+.menu li input{
+border-top: none; border-left: none; border-right: none;
+border-bottom: 1px solid var(--cafemasoscuro-color);
+width: 120px;
+
+}
+.menu li, input:focus{
+    border: none;
+}
+#chk-menu{
+    display: none;
+}
+#chk-menu:checked ~ .item{
+    display:flex;
+    justify-content:flex-start;
+}
+
+.btn-menu{
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+
+/*----------------------------------FOOTER ESTILOS-----------------------*/
+
+footer{
+   
+    display: flex;
+     width: 100vw;
+     max-width: 100%;
+     flex-direction: column; 
+     width: max-content;
+     color:var(--cafemasoscuro-color);
+    background:rgb(221, 210, 210);
+     opacity: 80%;
+ }
+ 
+ .footer-op{
+     display: flex;
+     flex-direction: column;
+     width: 100vw;
+     max-width: 100%;
+     background-color: rgba(255,250,250, 70%);
+ }
+ 
+ #footer-con-info{
+     display: flex;
+     flex-direction: column;  
+     align-items: center;
+     margin-bottom: 15px;
+     justify-content: space-evenly;
+     width: 100%;
+ }
+ #footer-con-info h2{
+     margin-block-start:5px;
+     margin-block-end: 5px;
+ }
+ .footer-title{
+     text-decoration: underline 1px #272727;
+ }
+ .footer-info{
+     margin-top: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ #footer-form{
+     display: flex;
+     flex-direction: column;
+     height: 50%;
+ }
+ .footer-form-input{
+     padding-left: 5px;
+     width: 180px;
+     border: 0.5px solid #272727;
+     margin-bottom: 5px;
+ }
+ #footer-con-info h2{
+     font-size: 12px;
+ }
+ #footer-con-info p, li{
+ font-size: 11px;
+ }
+ #footer-con-info a{
+     text-decoration: none;
+     color: var(--cafemasoscuro-color);
+ }
+ #footer-form textarea{
+     padding-left: 5px;
+ }
+ .footer-contact-sm {
+     text-align: center;
+ }
+ .btn-enviar{
+     align-self:center;
+     border-radius: 2px;
+     margin-top: 3px;
+     border: none;
+     background-color:var(--amarillo-color);
+     width: 70px;
+ }
+ @media screen and (min-width:700px){
+  #footer-con-info{
+         flex-direction: row;  
+         align-items: baseline;
+     }
+     #footer-con-info p, li{
+         font-size: 14px;
+         }
+ }
+ @media screen and (min-width:1000px){
+ #footer-con-info{
+     display: flex;
+     flex-direction:row;  
+     align-items: center;
+ }
+ .footer-info{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ #footer-form{
+     display: flex;
+     flex-direction: column;
+     height: 50%;
+ }
+ #footer-con-info h2{
+     font-size: 16px;
+ }
+ #footer-con-info p, li{
+     font-size: 16px;
+     }
+ }
+
+
 
 
 /*------------------------------------------------tabletas*/
@@ -437,66 +615,7 @@ h1{
 
 
 
-    /*---------------------------------header y nav bar-----------------------------------------------------------*/
-    #box-header{
-        display: grid;
-        grid-template-columns: 40% 60%;
-        justify-content: center;
-        margin-right: 5px;
-        margin-bottom: 5px;
-        
-    }
-    .menu{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        flex-direction: column;
-    }
-    .logo{
-        display: flex;
-        text-align: center;
-        margin: 0px 20px;
-    }
-    .logo h1{
-        font-family:'Dancing Script', cursive;
-        color: var(--amarillo-color);
-        font-size: 35px;
-        text-shadow: 0px 0px 2px black;
-    }
-    .menu li{
     
-        list-style: none;
-        display: none;
-    }
-    .menu a{
-        text-decoration: none;
-        color: #301309;
-    }
-    .menu li, select{
-        border: none;
-        font-size: 14px;
-    }
-    .menu li input{
-    border-top: none; border-left: none; border-right: none;
-    border-bottom: 1px solid var(--cafemasoscuro-color);
-    width: 120px;
-    
-    }
-    .menu li, input:focus{
-        border: none;
-    }
-    #chk-menu{
-        display: none;
-    }
-    #chk-menu:checked ~ .item{
-        display:flex;
-        justify-content:flex-start;
-    }
-    
-    .btn-menu{
-        font-size: 1rem;
-        cursor: pointer;
-    }
     
     @media screen and (min-width:700px)
     {
@@ -562,119 +681,9 @@ h1{
     justify-content: center;
     align-items: center;
         }
+    }
 
 
-
-        /*----------------------------------FOOTER ESTILOS-----------------------*/
-
-footer{
-   
-    display: flex;
-     width: 100vw;
-     max-width: 100%;
-     flex-direction: column; 
-     width: max-content;
-     color:var(--cafemasoscuro-color);
-    background:rgb(221, 210, 210);
-     opacity: 80%;
- }
- 
- .footer-op{
-     display: flex;
-     flex-direction: column;
-     width: 100vw;
-     max-width: 100%;
-     background-color: rgba(255,250,250, 70%);
- }
- 
- #footer-con-info{
-     display: flex;
-     flex-direction: column;  
-     align-items: center;
-     margin-bottom: 15px;
-     justify-content: space-evenly;
-     width: 100%;
- }
- #footer-con-info h2{
-     margin-block-start:5px;
-     margin-block-end: 5px;
- }
- .footer-title{
-     text-decoration: underline 1px #272727;
- }
- .footer-info{
-     margin-top: 10px;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
- #footer-form{
-     display: flex;
-     flex-direction: column;
-     height: 50%;
- }
- .footer-form-input{
-     padding-left: 5px;
-     width: 180px;
-     border: 0.5px solid #272727;
-     margin-bottom: 5px;
- }
- #footer-con-info h2{
-     font-size: 12px;
- }
- #footer-con-info p, li{
- font-size: 11px;
- }
- #footer-con-info a{
-     text-decoration: none;
-     color: var(--cafemasoscuro-color);
- }
- #footer-form textarea{
-     padding-left: 5px;
- }
- .footer-contact-sm {
-     text-align: center;
- }
- .btn-enviar{
-     align-self:center;
-     border-radius: 2px;
-     margin-top: 3px;
-     border: none;
-     background-color:var(--amarillo-color);
-     width: 70px;
- }
- @media screen and (min-width:700px){
-  #footer-con-info{
-         flex-direction: row;  
-         align-items: baseline;
-     }
-     #footer-con-info p, li{
-         font-size: 14px;
-         }
- }
- @media screen and (min-width:1000px){
- #footer-con-info{
-     display: flex;
-     flex-direction:row;  
-     align-items: center;
- }
- .footer-info{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
- 
- #footer-form{
-     display: flex;
-     flex-direction: column;
-     height: 50%;
- }
- #footer-con-info h2{
-     font-size: 16px;
- }
- #footer-con-info p, li{
-     font-size: 16px;
-     }
- }
+        
 
  
