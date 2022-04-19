@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <script src="https://kit.fontawesome.com/5e8f2c7b17.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../../src/css/galeria.css"></head>
 <body>
    
@@ -15,35 +15,39 @@
         <nav class="menu">
             <input type="checkbox" id="chk-menu">
             <label for="chk-menu" class="btn-menu">
-            <i class="fa-solid fa-bars" ></i>
+            <i class="fa-solid fa-bars"></i>
             </label>
-                <li class="item"><a href="index.html">Inicio</a></li>
-                <li class="item"><a href="src/pages/galeria.html">Galería</a></li>
-                <li class="item"><a href="src/pages/productos/productos.html">Productos</a></li>
-                <li class="item"><a href="src/pages/talleres.html">Talleres</a></li>
+                <li class="item"><a href="../../index.html">Inicio</a></li>
+                <li class="item"><a href="./galeria.html">Galería</a></li>
+                <li class="item"><a href="./productos/productos.html">Productos</a></li>
+                <li class="item"><a href="./talleres.html">Talleres</a></li>
                 <li class="item">
                    <select>
-                    <option value="0" ><a href="src/pages/login.html">Tu Cuenta</a></option>
-                    <option value="1" ><a href="src/pages/registro.html">Crear Cuenta</a></option></select>
+                    <option value="0" ><a href="../pages/login.html">Tu Cuenta</a></option>
+                    <option value="1" ><a href="../pages/registro.html">Crear Cuenta</a></option></select>
                     </li>
-                <li class="item"><input  type="text" placeholder="Buscar"><img  src="../assets/images/lupa.png"></li>
+                <li class="item"><input  type="text" placeholder="Buscar"><img src="../assets/images/lupa.png"></li>
           
         </nav>
     </header>
-<h1>Galería</h1>
+<h1 class="g-h1">Galería</h1>
 
 <div class="g-container">
 
     
-<section class="g-fotos-izquierda">
-<img class="arq-pastel" src="../assets/images/galeria/arq. -pastel seco(lapiz y tiza).jpeg">
+<section class="g-pics-left">
+    <section id="g-modal_picture" class="g-modal_picture">
+        <a href="#g-modal" class="g-cta">
+            <img class="arq-pastel" src="../assets/images/galeria/arq. -pastel seco(lapiz y tiza).jpeg"></a>
+        </section>
+
 <img class="ave-pluma" src="../assets/images/galeria/ave, pluma, rosa- óleo.jpeg">
 <img class="caballos-arena" src="../assets/images/galeria/caballos- arena.jpeg">
 <img class="cabana" src="../assets/images/galeria/cabaña- óleo.jpeg">
 <img class="casa-china" src="../assets/images/galeria/casa china- óleo.jpeg">
 <img class="cielos-oleo" src="../assets/images/galeria/cielos-óleo.jpeg">
 </section>
-<section class="g-fotos-central1">
+<section class="g-pics-central-a">
     <img class="arq-oleo" src="../assets/images/galeria/tercera,cuarta/arquitectura-oleo.jpg">
     <img class="finca-oleo-aguada" src="../assets/images/galeria/tercera,cuarta/finca-oleo-aguada.jpg">
     <img class="finca-oleo" src="../assets/images/galeria/tercera,cuarta/finca-oleo.jpg">
@@ -52,7 +56,7 @@
     <img class="peces-acrilico" src="../assets/images/galeria/tercera,cuarta/peces-acrilico.jpg">
 </section>
 
-<section class="g-fotos-central2">
+<section class="g-pics-central-b">
     <img class="peces-pastel" src="../assets/images/galeria/tercera,cuarta/peces-pastel seco.jpg">
         <img class="rio-oleo" src="../assets/images/galeria/tercera,cuarta/rio otoño-oleo.jpg">
         <img class="rosas--oleo" src="../assets/images/galeria/tercera,cuarta/rosas--oleo.jpg">
@@ -61,7 +65,7 @@
         <img class="ventana-oleo" src="../assets/images/galeria/tercera,cuarta/ventana-oleo.jpg">
     </section>
 
-   <section class="g-fotos-derecha">
+   <section class="g-pics-right">
      <img class="colibri" src="../assets/images/galeria/colibrí- color y óleo.jpeg">
 <img class="entrada-oleo" src="../assets/images/galeria/entrada- óleo.jpeg">
 <img class="flor-esferos" src="../assets/images/galeria/flor- esferos.jpeg">
@@ -73,17 +77,14 @@
 </div>
 </body>
 
-<section id="modal_picture" class="modal_picture">
-    <a href="#modal" class="cta">
-        <img src="../assets/images/galeria/arq. -pastel seco(lapiz y tiza).jpeg"></a>
-    </section>
-<section id="modal" class="modal">
-    <div class="modalContainer">
-        <figure class="modalPicture">
+
+<section id="g-modal" class="g-modal">
+    <div class="g-modalContainer"> <a href="#g-modal_picture"><i class="g-closeModal fa-solid fa-xmark"></i></a><br>
+        <figure class="g-modalPicture">
             <img src="../assets/images/galeria/arq. -pastel seco(lapiz y tiza).jpeg" alt="" class="modalImg">
         </figure>
         
-        <p class="modalP">
+        <p class="g-modalP">
             <strong>Nombre de la obra:</strong><em>"Arquitectura"</em><br>
             <strong>Autor:</strong> Nataly Quiroga<br>
             <strong>Técnica:</strong> Pastel seco sobre papel kraft<br>
@@ -92,8 +93,8 @@
                             <strong>Precio:</strong> $140.000
         </p>
 
-        <a href="#modal_picture" class="g-modalClose">Comprar</a>
-        <a href="#modal_picture" class="g-modalClose">Agregar al carrito</a>
+        <a href="../pages/dashboard/compras.html" class="g-modalClose">Comprar</a>
+        <a href="#g-modal_picture" class="g-modalClose">Agregar al carrito</a>
     </div>
 
 </section>
@@ -106,8 +107,8 @@
             <article class="footer-info">
                 <h2 class="footer-title">CUENTA</h2>
                 <ul>
-                    <li><a href="#">Mi cuenta</a></li>
-                    <li><a href="#">Regístrate</a></li>
+                    <li><a href="./login.html">Mi cuenta</a></li>
+                    <li><a href="./registro.html">Regístrate</a></li>
                     <li>Búsqueda</li>
                 </ul>
             </article>

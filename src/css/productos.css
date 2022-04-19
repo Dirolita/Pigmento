@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap'); 
+
+*{box-sizing: border-box;
+margin: 0;}
+html{
+    height: 100%;
+}
+:root{
+    --negro-color:#191919;
+    --blanco-color:#ffffff;
+    --cafeoscuro-color: #572612;
+    --cafemasoscuro-color: #301309;
+    --amarillo-color: #F9D544;
+  }
+  header, body, footer{font-family: 'Baloo 2', cursive;
+    text-align: center;}
+.p-h1{
+    color: var(--cafeoscuro-color);
+    font-size: 32pt;
+    text-align: center;
+}
+.p-h2{
+    color: var(--cafeoscuro-color);
+    font-size: 28pt;
+    text-align: center;
+    margin: 85px auto;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+     
+}
+.p-banner{
+    background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+}
+.p-sections{
+    color:var(--cafeoscuro-color);
+    justify-content: center;
+    text-align: center;
+}
+.sec-paints, .sec-spatulas, .sec-brushes, .sec-canvas{
+    border:1px solid rgb(255, 255, 255) ;
+    
+}
+.sec-paints{
+    background-image: url(../../src/assets/images/productos/pinturas1.jpg);
+    background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height:auto;
+    cursor:grab;
+    margin: 0 0;
+    padding: 0 0;
+    grid-area: sec-paints; 
+}
+.p-box-paintwork, .p-box-spatula, .p-box-brush, .p-box-canvas{ 
+    width: 100%;
+    height:auto;
+    margin: 1em 1em ;
+    padding: 0 0;
+    text-decoration: none;
+   border: 1px solid rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    
+    
+}
+
+.sec-paints:hover h2{
+    opacity:1; 
+   
+}
+.sec-paints:hover{
+    opacity:0.8; 
+    
+   
+}
+.sec-spatulas{
+    background-image: url(../../src/assets/images/productos/espatulas\ productos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:auto;
+    cursor:grab;
+    margin: 0;
+    padding: 0;
+    grid-area: sec-spatulas;
+}
+
+.sec-spatulas:hover h2{
+    opacity:1; 
+    
+}
+.sec-spatulas:hover{
+    opacity:0.8;  
+    
+}
+.sec-brushes{
+    background-image: url(../../src/assets/images/productos/pinceles.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:auto;
+    cursor:grab;
+    margin: 0;
+    padding: 0;
+    grid-area: sec-brushes;
+}
+.sec-brushes:hover h2{
+    opacity:1; 
+    
+}
+.sec-brushes:hover{
+    opacity:0.8;  
+    
+}
+.sec-canvas{
+    background-image: url(../../src/assets/images/productos/lienzo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:auto;
+    cursor:grab;
+    margin: 0;
+    padding: 0;
+    grid-area: sec-canvas;
+}
+
+.sec-canvas:hover h2{
+    opacity:1; 
+    
+}
+.sec-canvas:hover{
+    opacity:0.8;  
+    
+}
+.p-sections{
+    display: grid;
+    grid-template-areas: 
+    "sec-paints" 
+    "sec-spatulas"
+    "sec-brushes"
+    "sec-canvas";
+}
+
+
+
+
+/*---------------------------------header y nav bar-----------------------------------------------------------*/
+#box-header{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.logo{
+    display: flex;
+    text-align: center;
+    margin: 0px 20px;
+}
+.logo h1{
+    font-family:'Dancing Script', cursive;
+    color: var(--amarillo-color);
+    font-size: 35px;
+    text-shadow: 0px 0px 2px black;
+}
+.menu li{
+
+    list-style: none;
+    display: none;
+}
+.menu a{
+    text-decoration: none;
+    color: #301309;
+}
+.menu li, select{
+    border: none;
+    font-size: 14px;
+}
+.menu li input{
+border-top: none; border-left: none; border-right: none;
+border-bottom: 1px solid var(--cafemasoscuro-color);
+width: 120px;
+
+}
+.menu li, input:focus{
+    border: none;
+}
+#chk-menu{
+    display: none;
+}
+#chk-menu:checked ~ .item{
+    display:flex;
+    justify-content:flex-start;
+}
+
+.btn-menu{
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+
+/*----------------------------------FOOTER ESTILOS-----------------------*/
+
+footer{
+   
+    display: flex;
+     width: 100vw;
+     max-width: 100%;
+     flex-direction: column; 
+     width: max-content;
+     color:var(--cafemasoscuro-color);
+    background:rgb(221, 210, 210);
+     opacity: 80%;
+ }
+ 
+ .footer-op{
+     display: flex;
+     flex-direction: column;
+     width: 100vw;
+     max-width: 100%;
+     background-color: rgba(255,250,250, 70%);
+ }
+ 
+ #footer-con-info{
+     display: flex;
+     flex-direction: column;  
+     align-items: center;
+     margin-bottom: 15px;
+     justify-content: space-evenly;
+     width: 100%;
+ }
+ #footer-con-info h2{
+     margin-block-start:5px;
+     margin-block-end: 5px;
+ }
+ .footer-title{
+     text-decoration: underline 1px #272727;
+ }
+ .footer-info{
+     margin-top: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ #footer-form{
+     display: flex;
+     flex-direction: column;
+     height: 50%;
+ }
+ .footer-form-input{
+     padding-left: 5px;
+     width: 180px;
+     border: 0.5px solid #272727;
+     margin-bottom: 5px;
+ }
+ #footer-con-info h2{
+     font-size: 12px;
+ }
+ #footer-con-info p, li{
+ font-size: 11px;
+ }
+ #footer-con-info a{
+     text-decoration: none;
+     color: var(--cafemasoscuro-color);
+ }
+ #footer-form textarea{
+     padding-left: 5px;
+ }
+ .footer-contact-sm {
+     text-align: center;
+ }
+ .btn-enviar{
+     align-self:center;
+     border-radius: 2px;
+     margin-top: 3px;
+     border: none;
+     background-color:var(--amarillo-color);
+     width: 70px;
+     cursor:pointer;
+ }
+ @media screen and (min-width:700px){
+  #footer-con-info{
+         flex-direction: row;  
+         align-items: baseline;
+     }
+     #footer-con-info p, li{
+         font-size: 14px;
+         }
+ }
+ @media screen and (min-width:1000px){
+ #footer-con-info{
+     display: flex;
+     flex-direction:row;  
+     align-items: center;
+ }
+ .footer-info{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ #footer-form{
+     display: flex;
+     flex-direction: column;
+     height: 50%;
+ }
+ #footer-con-info h2{
+     font-size: 16px;
+ }
+ #footer-con-info p, li{
+     font-size: 16px;
+     }
+ }
+
+
+
+
+
+/*-----*/
+@media screen and (min-width:768px){
+
+.p-sections{
+    justify-content: space-around;
+    grid-template-columns: 40% 40% ;
+    display: grid;
+    grid-template-areas: 
+    "sec-paints sec-spatulas"
+    "sec-brushes sec-canvas";
+}
+
+}
+
+@media screen and (min-width:1024px){
+    .sec-paints, .sec-spatulas, .sec-brushes, .sec-canvas{
+        width: 100%;
+        
+    }
+    
+    .p-sections{
+        justify-content:space-evenly;
+        grid-template-columns: 25% 25%;
+        display: grid;
+        grid-template-areas: 
+        "sec-paints sec-spatulas"
+        "sec-brushes sec-canvas";
+    }
+    a{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+@media screen and (min-width:1200px){
+    html{
+        background-color: #ffffff;
+    }
+    .p-sections{
+        display: grid;
+        grid-template-areas: 
+        "sec-paints sec-spatulas"
+        "sec-brushes sec-canvas";
+    }
+
+}
+
+/*-----------------------medias de header y footer--------------------*/
+@media screen and (min-width:700px)
+{
+    /*------------------HEADER-----------------------*/
+    #box-header{
+        grid-template-columns: 30% 70%;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .menu li, select{
+        border: none;
+        font-size: 12px;
+    }
+    .logo h1{
+        font-size: 60px;
+        font-family: 'Dancing Script', cursive;
+        }
+        .btn-menu{
+            display: none;
+        }
+    .menu li{
+    width: 90vw;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    }
+/*------------------FOOTER-----------------------*/
+    #footer-con-info{
+        flex-direction: row;  
+        align-items: baseline;
+    }
+    #footer-con-info p, li{
+        font-size: 14px;
+        }
+}
+
+@media screen and (min-width:1000px){
+/*------------------HEADER-----------------------*/
+.menu{margin-right: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.menu li, select{
+   
+    border: none;
+    font-size: 15px;
+}
+.logo h1{
+    font-size: 90px;
+    text-shadow: 1px 1px 5px black;
+    }
+.btn-menu{
+        display: none;
+    }
+.menu li{
+ width: 100vw;
+display:flex;
+justify-content: center;
+align-items: center;
+    }
+}

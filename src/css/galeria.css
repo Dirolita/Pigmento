@@ -14,7 +14,7 @@ html{
     --amarillo-color: #F9D544;
   }
   header, body, footer{font-family: 'Baloo 2', cursive;}
-h1{
+.g-h1{
     color: var(--cafeoscuro-color);
     font-size: 32pt;
     text-align: center;
@@ -167,7 +167,7 @@ h1{
     margin: 1rem 1rem;
     grid-area: ventana-oleo;
 }
-.g-fotos-izquierda{
+.g-pics-left{
     display:grid;
     grid-template-areas: 
 "arq-pastel"
@@ -189,14 +189,14 @@ h1{
 }
 
 /*---------------------------Modal--------------------------------------*/
-.modal_picture{
+.g-modal_picture{
     display: flex;
     height: auto;
-    width: auto;
-    max-width: fit-content;
-    border: 3px solid green;
+    width: 100%;
+    max-width: 100%;
+   /* border: 3px solid green;*/
 }
-.cta{
+.g-cta{
     margin: 0 0;
     /*background-image: url(../assets/images/galeria/arq.\ -pastel\ seco\(lapiz\ y\ tiza\).jpeg);
     
@@ -210,7 +210,7 @@ h1{
     border-radius: 0;
     
 }
-.modal{
+.g-modal{
     position: fixed;
     top: 0;
     bottom: 0;
@@ -224,11 +224,11 @@ h1{
     pointer-events: var(--pointer);
     transition: opacity 0.5s;
 }
-.modal:target{
+.g-modal:target{
     --opacity:1;
     --pointer: unset;
 }
-.modalContainer{
+.g-modalContainer{
     margin: auto;
     background-color: #fff;
     width: 50%;
@@ -240,7 +240,7 @@ h1{
     border-radius: 1em;
 }
 
-.modal:target .modal container{
+.g-modal:target .g-modal container{
     animation: show 1s 0.5 backwards
 }
 @keyframes show {
@@ -248,24 +248,23 @@ h1{
     100%{transform: translateY(0);}
     
 }
-.modalPicture{
+.g-modalPicture{
     width: 100%;
     margin: 0 auto;
-    max-width: 600px;
-    margin-bottom: 2em;
+    
 }
-.modal:target .modalPicture {
+.g-modal:target .modalPicture {
     animation: scale 0.5s 1s backwards
 }
 @keyframes scale {
     0%{transform: scale(0);}
     
 }
-.modalImg{
+.g-modalImg{
     width: 100%;
     display: block;
 }
-.modalP{
+.g-modalP{
     margin-top: 1em;
     margin-bottom: 1em;
     line-height: 1;
@@ -285,6 +284,13 @@ h1{
     color: var(--cafeoscuro-color);
     border-radius: 0.4em;
     margin: 0 0.5em;
+}
+.g-closeModal{
+    
+    color: #333;
+    border-radius: 0.4em;
+    display: block;
+    float: right;
 }
 
 
@@ -429,6 +435,7 @@ footer{
      border: none;
      background-color:var(--amarillo-color);
      width: 70px;
+     cursor:pointer;
  }
  @media screen and (min-width:700px){
   #footer-con-info{
@@ -469,27 +476,27 @@ footer{
 
 /*------------------------------------------------tabletas*/
 @media screen and (min-width:768px){  
-    .g-fotos-izquierda{
-        grid-area: g-fotos-izquierda;
+    .g-pics-left{
+        grid-area: g-pics-left;
         width: 95%;
         margin: 1em 1em;
     }
-    .g-fotos-derecha{
-        grid-area: g-fotos-derecha;
+    .g-pics-right{
+        grid-area: g-pics-right;
         width: 95%;
         margin: 1em 1em;
     }
-    .g-fotos-central1{
-        grid-area: g-fotos-central1;
+    .g-pics-central-a{
+        grid-area: g-pics-central-a;
         width: 95%;
         margin: 1em 1em;
     }
-    .g-fotos-central2{
-        grid-area: g-fotos-central2;
+    .g-pics-central-b{
+        grid-area: g-pics-central-b;
         width: 95%;
         margin: 1em 1em;
     } 
-    .g-fotos-izquierda{
+    .g-pics-left{
         display:grid;
         grid-template-areas: 
     "arq-pastel"
@@ -503,7 +510,7 @@ footer{
     
     }
     
-    .g-fotos-central1{
+    .g-pics-central-a{
         display: grid;
         grid-template-areas:
         "arq-oleo"
@@ -516,7 +523,7 @@ footer{
         
        
     }
-    .g-fotos-central2{
+    .g-pics-central-b{
         display: grid;
         grid-template-areas:
         "peces-pastel"
@@ -528,7 +535,7 @@ footer{
         ;
        
     }
-    .g-fotos-derecha{
+    .g-pics-right{
         display: grid;
         grid-template-areas:
         "colibri"
@@ -556,8 +563,8 @@ footer{
         grid-template-columns: 45% 45%;
         grid-template-rows: auto auto;
         grid-template-areas: 
-        "g-fotos-izquierda g-fotos-central1"
-        "g-fotos-central2 g-fotos-derecha";
+        "g-pics-left g-pics-central-a"
+        "g-pics-central-b g-pics-right";
     }
     }
 
@@ -570,8 +577,8 @@ footer{
         grid-template-columns: 45% 45%;
         grid-template-rows: auto auto;
         grid-template-areas: 
-        "g-fotos-izquierda g-fotos-central1"
-        "g-fotos-central2 g-fotos-derecha";
+        "g-pics-left g-pics-central-a"
+        "g-pics-central-b g-pics-right";
         }     
     }
 
@@ -586,10 +593,10 @@ footer{
         grid-template-rows: auto ;
             display: grid;            
             grid-template-areas: 
-            "g-fotos-izquierda g-fotos-central1 g-fotos-central2";
+            "g-pics-left g-pics-central-a g-pics-central-b";
             margin: 0 auto;
         }  
-        .g-fotos-derecha{
+        .g-pics-right{
             display:none;
         }
     }
@@ -616,7 +623,7 @@ footer{
 
 
     
-    
+    /*-----------------------medias de header y footer--------------------*/
     @media screen and (min-width:700px)
     {
         /*------------------HEADER-----------------------*/
