@@ -231,7 +231,7 @@ html{
 .g-modalContainer{
     margin: auto;
     background-color: #fff;
-    width: 50%;
+    width: 70vh;
     max-width: 600px;
     max-width: 90%;
     overflow: hidden;
