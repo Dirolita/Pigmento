@@ -2,9 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 *{
     box-sizing: border-box;
+    margin: 0px;
+}
+
+:root{
+    --negro-color:#191919;
+	--blanco-color:#ffffff;
+	--cafeoscuro-color:#572612;
+	--cafemasoscuro-color:#301309;
+	--amarillo-color:#f9d544;
 }
 /*header*/
 #box-header{
+    margin: 0px;
     display: grid;
     grid-template-columns: 40% 60%;
     justify-content: center;
@@ -74,13 +84,7 @@ body{
     color: var(--cafeoscuro-color);
 }
 
-:root{
-    --negro-color:#191919;
-	--blanco-color:#ffffff;
-	--cafeoscuro-color:#572612;
-	--cafemasoscuro-color:#301309;
-	--amarillo-color:#f9d544;
-}
+
 
 .principal{
     width: 100%;
@@ -91,8 +95,6 @@ body{
     grid-template-rows: repeat(4, auto);
     padding: 1.5rem;
     column-gap: 1.5rem;
-
-
 
 }
 
