@@ -239,6 +239,9 @@ html{
     padding: 2.5rem 1.5rem;
     border-radius: 1em;
 }
+.g-modalPicture img{
+    width: 100%;
+}
 
 .g-modal:target .g-modal container{
     animation: show 1s 0.5 backwards
@@ -250,7 +253,7 @@ html{
 }
 .g-modalPicture{
     width: 100%;
-    margin: 0 auto;
+    margin: 0 0;
     
 }
 .g-modal:target .modalPicture {
@@ -598,6 +601,11 @@ footer{
         }  
         .g-pics-right{
             display:none;
+        }
+        .g-modalPicture{
+            width: 70%;
+            margin: 0 50px;
+            
         }
     }
 
