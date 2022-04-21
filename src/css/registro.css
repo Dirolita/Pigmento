@@ -40,10 +40,10 @@ header{
 
 .caja{
    grid-area: caja ;
-    padding: 10%;
+    padding: 20%;
     color: var(--blanco-color);
    background-color:#301309;
-   height: auto;
+   height: 100;
    border-radius: 5px;
    display:flex;
    flex-direction: column;
@@ -59,11 +59,12 @@ h2{
     font-size: 180%;
 }
 
+
  input{
  color: var(--blanco-color);
- 
- width:70% ;
- height: 7%;
+
+ width:100% ;
+ height: 10%;
  font-weight: 400;
  
 }
