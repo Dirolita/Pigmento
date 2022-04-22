@@ -113,6 +113,24 @@ body{
 }
 
 
+.product_alone{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    margin-bottom: 3rem;
+    background-color: rgba(165,227,135, 50%);
+    text-align: center;
+}
+
+.product_alone h3{ 
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.product_alone_two{
+    grid-row: 2/4;
+    height: 30vh;
+}
+
 .product{
     display: grid;
     grid-column: 1/13;
@@ -125,6 +143,8 @@ body{
 
 
 }
+
+
 
 .image{
     grid-column: 1/9;
@@ -181,106 +201,111 @@ body{
     font-weight: 600;
 }
 
+/*modal*/
 
-.modal{
+.g-modal_picture{
+    display: flex;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+   /* border: 3px solid green;*/
+}
+.g-cta{
+    margin: 0 0;
+    /*background-image: url(../assets/images/galeria/arq.\ -pastel\ seco\(lapiz\ y\ tiza\).jpeg);
+    
+    */background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+    color: white;
+    text-decoration: none;
+    
+    border-radius: 0;
+    
+}
+.g-modal{
     position: fixed;
-    top:0;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    background-color: rgba(96, 96, 87, 0.6);
     display: flex;
-    --opacity: 0;
-    --pointer:none;
-    background-color: rgba(32, 36, 9, 0.5);
-    opacity: var(--opacity);
+    --opacity:0;
+    --pointer: none;
+    opacity:var(--opacity);
     pointer-events: var(--pointer);
     transition: opacity 0.5s;
 }
-
-.modal:target{
-    --opacity: 1;
-    --pointer:unset;
+.g-modal:target{
+    --opacity:1;
+    --pointer: unset;
 }
-
-.modalContainer{
+.g-modalContainer{
     margin: auto;
     background-color: #fff;
-    width: 90%;
+    width: 50%;
     max-width: 600px;
-    max-height: 70%;
+    max-width: 90%;
     overflow: hidden;
-    text-align: center;
-    padding: 1em 1em;
+    text-align:center;
+    padding: 2.5rem 1.5rem;
     border-radius: 1em;
-    border-color: 3px solid var(--cafemasoscuro-color);
 }
 
-
-.modalPicture{
-    max-width: 30%;
-    max-height: 30%;
-    height: 30%;
-    width: 100%;
-    align-items: center;
+.g-modal:target .g-modal container{
+    animation: show 1s 0.5 backwards
 }
-
-.modalPicture img{
-    align-items: center;
-}
-
-.modal:target .modalContainer{
-    animation: show 1s 0.5s backwards;
-}
-
-@keyframes show{
-    0%{
-        transform:translateY(-150vh);
-    }
-    100%{
-        transform: translateY(0);
-    }
-} 
-
-
-.modal:target .modalPicture{
-    animation: scale 0.5s 1s backwards;
-}
-
-@keyframes show{
-    0%{
-        transform:scale(0);
-    }
+@keyframes show {
+    0%{transform: translateY(-150px) ;}
+    100%{transform: translateY(0);}
     
-} 
-
-
-.modalTitle{
-    font-size: 1.5rem;
-    font-weight: 600;
 }
-
-.modalTitle--bold{
-    font-weight: 800;
+.g-modalPicture{
+    width: 100%;
+    margin: 0 auto;
+    
 }
-
-.modalP{
+.g-modal:target .modalPicture {
+    animation: scale 0.5s 1s backwards
+}
+@keyframes scale {
+    0%{transform: scale(0);}
+    
+}
+.g-modalImg{
+    width: 100%;
+    display: block;
+}
+.g-modalP{
     margin-top: 1em;
     margin-bottom: 1em;
-    line-height: 1.5;
+    line-height: 1;
+    font-size: 1.5rem;
+   /* text-align: justify;
+    display: flex;
+    justify-content: center;*/
 }
-
-
-.modalClose{
-    border: 1px solid #333;
-    padding: 1em 2em;
+.g-modalClose{
+    display: inline-block;
+    color: #333;
+    border-radius: 0.4em;
+    border: 1px solid #3333;
+    padding: 8px 8px;
     text-decoration: none;
-    font-weight: 300;
     background-color:var(--amarillo-color);
+    font-weight: 300;
     color: var(--cafeoscuro-color);
     border-radius: 0.4em;
-    width: 10%;
-    height: 5vh;
-    margin-right: 2rem;
+    margin: 0 0.5em;
+}
+.g-closeModal{
+    
+    color: #333;
+    border-radius: 0.4em;
+    display: block;
+    float: right;
 }
 
 
