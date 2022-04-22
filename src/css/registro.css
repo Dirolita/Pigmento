@@ -45,7 +45,7 @@ header{
     padding: 10%;
     color: var(--blanco-color);
    background-color:#301309;
-   height: 70vh;
+   height: 550px;
    border-radius: 5px;
    display:flex;
    flex-direction: column;
@@ -136,9 +136,7 @@ label{
 .img-registro svg{
     font-size: 40px;
 }
-.caja{
-    height: 90vh;
-}
+
 @media screen and (min-width: 1000px) {
     .contenedor-registro{
         grid-template-columns: 30% 40% 30%;

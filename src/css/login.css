@@ -46,11 +46,11 @@ font-size: 30px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80vw;
+    width: 70vw;
 border-radius: 10px;
 }
 .login-input{
-    width: 100%;
+    width: 125%;
     padding-top: 6px;
     padding-bottom: 6px;
     margin-bottom: 10px;
@@ -64,7 +64,7 @@ h2{margin-bottom: 1rem;
 
  input{
  color: var(--blanco-color);
- width:70% ;
+ width:80% ;
  height: 12%;
  font-weight: 400;
  
@@ -126,7 +126,7 @@ label{
         font-size: 180%;
     }
     .login-form{
-        width: 50vw;}
+        width: 40vw;}
 }
 @media screen and (min-width: 1650px) {
     .icono-log i{
