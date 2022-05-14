@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+:root{
+    --negro-color:#191919;
+	--blanco-color:#ffffff;
+	--cafeoscuro-color:#572612;
+	--cafemasoscuro-color:#301309;
+	--amarillo-color:#f9d544;
+}
+/*header*/
+#box-header{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.logo{
+    display: flex;
+    text-align: center;
+    margin: 0px 20px;
+}
+.logo h1{
+    font-family:'Dancing Script', cursive;
+    color: var(--amarillo-color);
+    font-size: 35px;
+    text-shadow: 0px 0px 2px black;
+}
+.menu li{
+
+    list-style: none;
+    display: none;
+}
+.menu a{
+  
+    text-decoration: none;
+    color: #301309;
+}
+.menu li, select{
+    border: none;
+
+}
+.menu li input{
+border-top: none; border-left: none; border-right: none;
+border-bottom: 1px solid var(--cafemasoscuro-color);
+width: 120px;
+
+}
+.menu li, input:focus{
+    border: none;
+}
+#chk-menu{
+    display: none;
+}
+#chk-menu:checked ~ .item{
+    display:flex;
+    justify-content:flex-start;
+}
+
+.btn-menu{
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/*body*/
+
+body{
+    font-family: 'Baloo 2', cursive;
+    font-size: 1rem;
+    color: var(--cafeoscuro-color);
+
+}
+.principal{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+    column-gap: 1.5rem;   
+    background-image: url(../../src/assets/images/fondomovil.jpg);
+    background-size: 100%;
+    background-repeat: repeat-x;
+
+}
+
+.title{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color:#f9d5449c ;
+}
+.title h1{
+    text-align: left;
+    color: var(--cafeoscuro-color);
+    font-size: 2rem;
+    font-weight:bolder;
+    margin: 0px;
+    text-align: center;
+}
+
+.sidebar{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.sidebar ul{
+    margin-top: 0.5rem;
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid var(--cafemasoscuro-color) ;
+    border-bottom:2px solid var(--cafemasoscuro-color) ;
+}
+
+.sidebar a{
+    color: var(--cafeoscuro-color);
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+}
+
+.sidebar i{
+    padding-right: 16px;
+}
+
+.sidebar a:hover{
+    background-color: var(--amarillo-color);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+.user{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(230, 221, 221, 0.452)
+}
+
+.user a{
+    color: #085A88;
+    font-weight: 600;
+}
+
+/*-----footer-----*/
+
+footer{
+   
+    display: flex;
+     width: 100vw;
+     max-width: 100%;
+     flex-direction: column; 
+     width: max-content;
+     color:var(--cafemasoscuro-color);
+    background:rgb(221, 210, 210);
+     opacity: 80%;
+ }
+ 
+ .footer-op{
+     display: flex;
+     flex-direction: column;
+     width: 100vw;
+     max-width: 100%;
+     background-color: rgba(255,250,250, 70%);
+ }
+ 
+ #footer-con-info{
+     display: flex;
+     flex-direction: column;  
+     align-items: center;
+     margin-bottom: 15px;
+     justify-content: space-evenly;
+     width: 100%;
+ }
+ #footer-con-info h2{
+     margin-block-start:5px;
+     margin-block-end: 5px;
+ }
+ .footer-title{
+     text-decoration: underline 1px #272727;
+ }
+ .footer-info{
+     margin-top: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ #footer-form{
+     display: flex;
+     flex-direction: column;
+     height: 50%;
+ }
+ .footer-form-input{
+     padding-left: 5px;
+     width: 180px;
+     border: 0.5px solid #272727;
+     margin-bottom: 5px;
+ }
+ #footer-con-info h2{
+     font-size: 12px;
+ }
+ #footer-con-info p, li{
+ font-size: 11px;
+ }
+ #footer-con-info a{
+     text-decoration: none;
+     color: var(--cafemasoscuro-color);
+ }
+ #footer-form textarea{
+     padding-left: 5px;
+ }
+ .footer-contact-sm {
+     text-align: center;
+ }
+ .btn-enviar{
+     align-self:center;
+     border-radius: 2px;
+     margin-top: 3px;
+     border: none;
+     background-color:var(--amarillo-color);
+     width: 70px;
+ }
+
+
+
+ @media screen and (min-width:700px){
+    /*------------------HEADER-----------------------*/
+    #box-header{
+        grid-template-columns: 30% 70%;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .menu li, select{
+        border: none;
+        
+    }
+    .logo h1{
+        font-size: 90px;
+        }
+        .btn-menu{
+            display: none;
+        }
+    .menu li{
+    width: 90vw;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    }
+    
+    /*body*/
+    
+    .principal{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, auto);
+        padding: 0px;
+        padding-bottom: 2.5rem;
+        margin: 0px;
+        column-gap: 1.5rem;
+        background-image: url(../../src/assets/images/fondoform.jpg);
+        background-size: 100%;
+        background-repeat: repeat;
+    }
+    
+    .title h1{
+        font-size: 2.5rem;
+    }
+    
+    .sidebar{
+        grid-column: 1/4;
+        grid-row: 2/4;
+        padding: 1.5rem;
+    }
+    
+    .sidebar ul{
+        margin-top: 0.5rem;
+        list-style: none;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        border-top: none;
+        border-bottom: none;
+    }
+    
+    .sidebar a{
+        color: var(--cafeoscuro-color);
+        font-size: 1rem;
+        padding: 8px;
+        display: block;
+        margin-bottom: 0.5rem;
+        margin-top: 0.6rem;
+    }
+    
+    .user{
+        display: grid;
+        grid-column: 4/12;
+        grid-row: 2/4;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        row-gap: 1.5rem;
+    }
+    
+    .user_title {
+        margin-top: 1rem;
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+    
+    .user_information {
+        display: grid;
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, auto);
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+    }
+    
+    .user_information_name{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .user_information_email{
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+    
+    .user_information_adress{
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+    
+    .user_information_phone{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .user_information_editPassword{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+      /*-----footer-----*/
+      #footer-con-info{
+        display: flex;
+        flex-direction:row;  
+        align-items: center;
+    }
+    .footer-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #footer-form{
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+    }
+    #footer-con-info h2{
+        font-size: 16px;
+    }
+    #footer-con-info p, li{
+        font-size: 16px;
+    }
+    
+    
+    }
+    
+
+    @media screen and (min-width:1000px){
+        .principal{
+
+            background-image: url(../../src/assets/images/fondoform.PNG);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+   
+    }

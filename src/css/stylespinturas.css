@@ -352,8 +352,6 @@ animation: show 1s 0.5s backwards;
 }
 .p-baner-pinc{
     display:block;
-
-
 }
 .p-baner-esp{
     display:none;
@@ -363,7 +361,6 @@ animation: show 1s 0.5s backwards;
 }
 .p-baner-pint{
     display: none;
-
 }
 footer{
    
@@ -463,29 +460,7 @@ footer{
             top: 4em;}
 
 }
-.p-baner-pinc{
-    display:block;
-    height: 300px;
-    width: 100%
-    
-}
-.p-baner-esp{
-    display:block;
-    height: 300px;
-    width: 100%
-    
-}
-.p-baner-lien{
-    display:block;
-    height: 300px;
-    width: 100%
-    
-}
-.p-baner-pint{
-    display:block;
-    height: 300px;
-    width: 100%
-}
+
 @media screen and (min-width:700px){
 
  /*------------------HEADER-----------------------*/
@@ -530,6 +505,29 @@ align-items: center;
     align-items: center;
     flex-direction: row;
     
+}
+.p-baner-pinc{
+    display:block;
+    height: 300px;
+    width: 100%
+    
+}
+.p-baner-esp{
+    display:block;
+    height: 300px;
+    width: 100%
+    
+}
+.p-baner-lien{
+    display:block;
+    height: 300px;
+    width: 100%
+    
+}
+.p-baner-pint{
+    display:block;
+    height: 300px;
+    width: 100%
 }
 .menu li, select{
    

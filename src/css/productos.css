@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap'); 
 
 *{box-sizing: border-box;
-margin: 0;}
+margin: 0;
+padding: 0;}
 html{
     height: 100%;
 }
@@ -17,7 +18,7 @@ html{
     text-align: center;}
 .p-h1{
     color: var(--cafeoscuro-color);
-    font-size: 32pt;
+    font-size: 18pt;
     text-align: center;
 }
 .p-h2{
@@ -30,11 +31,7 @@ html{
     z-index: 1;
      
 }
-.p-banner{
-    background-size: contain;
-        background-repeat: no-repeat;
-        width: 100%;
-}
+
 .p-sections{
     color:var(--cafeoscuro-color);
     justify-content: center;
@@ -66,7 +63,13 @@ html{
     
     
 }
-
+.p-baner-pint{
+    display: none;
+    background-image: url(../assets/images/productos/baner1.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
 .sec-paints:hover h2{
     opacity:1; 
    
@@ -291,14 +294,25 @@ footer{
  }
  @media screen and (min-width:700px){
   #footer-con-info{
-         flex-direction: row;  
-         align-items: baseline;
+        flex-direction: row;  
+        align-items: baseline;
      }
-     #footer-con-info p, li{
+    #footer-con-info p, li{
          font-size: 14px;
          }
+    .p-baner-pint{
+            display: none;
+        }
  }
  @media screen and (min-width:1000px){
+
+    .p-h1{
+        color: var(--cafeoscuro-color);
+        font-size: 25pt;
+    }
+    .p-baner-pint{
+        display:block;
+    }
  #footer-con-info{
      display: flex;
      flex-direction:row;  
@@ -439,5 +453,10 @@ footer{
 display:flex;
 justify-content: center;
 align-items: center;
+    }
+.p-baner-pint{
+        display:block;
+        height: 300px;
+        width: 100%
     }
 }

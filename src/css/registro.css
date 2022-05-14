@@ -32,7 +32,7 @@ header{
 
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 10% 80% 10%;
     grid-template-rows: repeat(4, auto);
     grid-template-areas: "header header header"
                          "espacio1 caja espacio2"
@@ -45,7 +45,7 @@ header{
     padding: 10%;
     color: var(--blanco-color);
    background-color:#301309;
-   height: 100;
+   height: 550px;
    border-radius: 5px;
    display:flex;
    flex-direction: column;
@@ -57,7 +57,7 @@ header{
 h2{
     color: white;
     font-weight: 600;
-    font-size: 180%;
+    font-size: 100%;
 }
 
 
@@ -120,13 +120,31 @@ label{
 .checkbox{
     background-color: #f9d544;
 }
-.img-registro img{
-    font-size: 100%;
+.img-registro svg{
+    font-size: 30px;
 }
 /*----------MEDIAS QUERYS ----------------------------*/
 
 @media screen and (min-width: 700px) {
+    h2{
+        font-size: 180%;
+    }
     
+.contenedor-registro{
+    grid-template-columns: 30% 40% 30%;}
 }
+.img-registro svg{
+    font-size: 40px;
+}
+
 @media screen and (min-width: 1000px) {
+    .contenedor-registro{
+        grid-template-columns: 30% 40% 30%;
+    }
+    .img-registro svg{
+        font-size: 80px;
+    }
+    .caja{
+        height: 90vh;
+    }
 }

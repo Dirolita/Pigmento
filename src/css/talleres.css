@@ -256,7 +256,31 @@ margin:0px 7px 0px 5px;
     font-size: 14px;
     }
 }
+/*Estilos de cuenta*/
+.box-form-cuenta{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    
+}
+.cont-cuenta{
+    margin-left: 60px;
 
+    color: var(--cafemasoscuro-color);
+}
+.info-cuenta{
+    width: 600px;
+    height: 230px;
+    border: 1px solid var(--cafemasoscuro-color);
+    margin-left: 60px;
+    display: flex;
+
+    justify-content:space-around;
+    color: var(--cafemasoscuro-color);
+}
+.datos-location{
+    margin-top: 30px;
+}
 @media screen and (min-width:1000px){
     /*------------------HEADER-----------------------*/
     .menu{margin-right: 20px;

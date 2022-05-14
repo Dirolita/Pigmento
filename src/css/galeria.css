@@ -232,13 +232,16 @@ background-color: brown;}
 .g-modalContainer{
     margin: auto;
     background-color: #fff;
-    width: 50%;
+    width: 70vh;
     max-width: 600px;
     max-width: 90%;
     overflow: hidden;
     text-align:center;
     padding: 2.5rem 1.5rem;
     border-radius: 1em;
+}
+.g-modalPicture img{
+    width: 100%;
 }
 
 .g-modal:target .g-modal container{
@@ -251,7 +254,7 @@ background-color: brown;}
 }
 .g-modalPicture{
     width: 100%;
-    margin: 0 auto;
+    margin: 0 0;
     
 }
 .g-modal:target .modalPicture {
@@ -599,6 +602,11 @@ footer{
         }  
         .g-pics-right{
             display:none;
+        }
+        .g-modalPicture{
+            width: 70%;
+            margin: 0 50px;
+            
         }
     }
 

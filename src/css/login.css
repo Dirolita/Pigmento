@@ -14,13 +14,12 @@ padding: 0;}
 body{
     font-size: 16px;
     font-family: 'Baloo 2';
-    background-image: url(../assets/images/andrian-valeanu-yjXlyrKIz2A-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
+  
 }
 
 .login-fondo{
-    background-image: url("../assets/images/close-up-photo-of-oil-paints-on-canvas-wall.jpg");
+    background-image: url("../assets/images/login.jpg");
+    background-size: cover;
     display: grid;
     justify-items: center;
     align-content: center;
@@ -47,11 +46,11 @@ font-size: 30px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40vw;
+    width: 70vw;
 border-radius: 10px;
 }
 .login-input{
-    width: 100%;
+    width: 125%;
     padding-top: 6px;
     padding-bottom: 6px;
     margin-bottom: 10px;
@@ -65,7 +64,7 @@ h2{margin-bottom: 1rem;
 
  input{
  color: var(--blanco-color);
- width:70% ;
+ width:80% ;
  height: 12%;
  font-weight: 400;
  
@@ -102,7 +101,7 @@ label{
 }
 .crea a{
     color: white;
-    text-decoration: none;
+
 }
 .crea a:hover{
     color: var(--amarillo-color);
@@ -117,6 +116,8 @@ label{
         h2{
             font-size: 150%;
         }
+        .login-form{
+        width: 60vw;}
 }
 @media screen and (min-width: 1000px) {
     .icono-log i{
@@ -124,7 +125,8 @@ label{
     h2{
         font-size: 180%;
     }
-}
+    .login-form{
+        width: 40vw;}
 }
 @media screen and (min-width: 1650px) {
     .icono-log i{
