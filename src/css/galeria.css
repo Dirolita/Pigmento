@@ -13,7 +13,8 @@ html{
     --cafemasoscuro-color: #301309;
     --amarillo-color: #F9D544;
   }
-  header, body, footer{font-family: 'Baloo 2', cursive;}
+  header, body, footer{font-family: 'Baloo 2', cursive;
+background-color: brown;}
 .g-h1{
     color: var(--cafeoscuro-color);
     font-size: 32pt;
