@@ -13,15 +13,48 @@ html{
     --cafemasoscuro-color: #301309;
     --amarillo-color: #F9D544;
   }
-  header, body, footer{font-family: 'Baloo 2', cursive;
-background-color: brown;}
+  header, body, footer{font-family: 'Baloo 2', cursive;}
 .g-h1{
     color: var(--cafeoscuro-color);
     font-size: 32pt;
     text-align: center;
     margin: 0.3em auto;
 }
-
+.g-h3 a{
+    text-decoration: none;
+    color: var(--cafeoscuro-color);
+}
+.g-h3-centrado{
+    font-size: 22pt;
+    color: var(--cafeoscuro-color);
+    text-align: center;
+    margin-top: 1em;
+}
+.g-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.g-titulo-sec:hover{
+    background-color:#f9d54463;
+}
+.g-menu h3:hover{
+    background-color:#f9d54463;
+}
+.ave-pluma, .caballos-arena, .colibri, .flor-esferos,
+.flor-aguada, .peces-acrilico, .rosas--oleo,
+.manzana-oleo, .manzanas-oleo, .canasta-manzana, .arquitectura-oleo, .cabana, .casa-china, 
+.cielos-oleo, .entrada-oleo,
+.finca-oleo, .rio-oleo, 
+.venecia-oleo,
+.arq-pastel, .tigre, .jarron-rosa, .peces-pastel{
+    width: 98%;
+    cursor:grab;
+    margin: 1rem 1rem;
+}
+/*
 .arq-pastel{
     width: 98%;
     cursor:grab;
@@ -178,7 +211,7 @@ background-color: brown;}
 "casa-china"
 "cielos-oleo"
 ;
-}
+}*/
 .g-container{
     height: auto;
     width: 80%;
@@ -495,68 +528,36 @@ footer{
         width: 95%;
         margin: 1em 1em;
     }
-    .g-pics-central-b{
-        grid-area: g-pics-central-b;
-        width: 95%;
-        margin: 1em 1em;
-    } 
-    .g-pics-left{
+    /*.g-pics-left{
         display:grid;
         grid-template-areas: 
-    "arq-pastel"
-    "ave-pluma"
-    "caballos-arena"
-    "cabana"
-    "casa-china"
-    "cielos-oleo"
-    ;
-    
-    
+        "ave-pluma" 
+        "caballos-arena"; 
     }
     
     .g-pics-central-a{
         display: grid;
         grid-template-areas:
-        "arq-oleo"
-        "finca-oleo-aguada"
-        "finca-oleo"
-        "manzanas-oleo"
-        "milla"
-        "peces-acrilico"
-        ;
-        
-       
+        "colibri" 
+        "flor-esferos"
+    
     }
-    .g-pics-central-b{
-        display: grid;
-        grid-template-areas:
-        "peces-pastel"
-        "rio-oleo"
-        "rosas--oleo"
-        "flor-aguada"
-        "venecia-oleo"
-        "ventana-oleo"
-        ;
-       
-    }
+   
     .g-pics-right{
         display: grid;
         grid-template-areas:
-        "colibri"
-        "entrada-oleo"
-        "flor-esferos"
+        "rosas--oleo" 
         "rosas-acrilico"
-        "jarron-rosa"
-        "jarron-oleo"
         ;
         
-    }
-    .arq-pastel,.casa-china,.caballos-arena,.cabana,.ave-pluma,
-    .cielos-oleo,.colibri,.entrada-oleo,.flor-esferos,
-    .flor-aguada, .jarron-rosa,.jarron-oleo, .arq-oleo, 
-    .finca-oleo-aguada, .finca-oleo,.manzanas-oleo, .milla,
-    .peces-acrilico, .peces-pastel, .rio-oleo, .rosas--oleo, 
-    .rosas-acrilico, .venecia-oleo, .ventana-oleo{
+    }*/
+    .ave-pluma, .caballos-arena, .colibri, .flor-esferos,
+.flor-aguada, .peces-acrilico, .rosas--oleo,
+.manzana-oleo, .manzanas-oleo, .canasta-manzana, .arquitectura-oleo, .cabana, .casa-china, 
+.cielos-oleo, .entrada-oleo,
+.finca-oleo, .rio-oleo, 
+.venecia-oleo,
+.arq-pastel, .tigre, .jarron-rosa, .peces-pastel{
         align-self: center;
         width: 100%;
     }
@@ -564,11 +565,13 @@ footer{
         justify-content: space-around;
         height: auto;
         display: grid;
-        grid-template-columns: 45% 45%;
+        grid-template-columns: 32% 32% 32%;
         grid-template-rows: auto auto;
         grid-template-areas: 
-        "g-pics-left g-pics-central-a"
-        "g-pics-central-b g-pics-right";
+        "g-pics-left g-pics-central-a g-pics-right";
+    }
+    .g-menu{
+        flex-direction: row;
     }
     }
 
@@ -578,11 +581,10 @@ footer{
             justify-content: space-around;
         height: auto;
         display: grid;
-        grid-template-columns: 45% 45%;
+        grid-template-columns: 32% 32% 32%;
         grid-template-rows: auto auto;
         grid-template-areas: 
-        "g-pics-left g-pics-central-a"
-        "g-pics-central-b g-pics-right";
+        "g-pics-left g-pics-central-a g-pics-right";
         }     
     }
 
@@ -597,12 +599,10 @@ footer{
         grid-template-rows: auto ;
             display: grid;            
             grid-template-areas: 
-            "g-pics-left g-pics-central-a g-pics-central-b";
+            "g-pics-left g-pics-central-a g-pics-right";
             margin: 0 auto;
         }  
-        .g-pics-right{
-            display:none;
-        }
+        
         .g-modalPicture{
             width: 70%;
             margin: 0 50px;
