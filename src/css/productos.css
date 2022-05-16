@@ -29,7 +29,7 @@ html{
     opacity: 0;
     position: relative;
     z-index: 1;
-     
+    text-shadow: 2px 2px 3px var(--amarillo-color);
 }
 
 .p-sections{
@@ -53,15 +53,14 @@ html{
     grid-area: sec-paints; 
 }
 .p-box-paintwork, .p-box-spatula, .p-box-brush, .p-box-canvas{ 
-    width: 100%;
+    width: 98%;
+    max-width: 100%;
     height:auto;
-    margin: 1em 1em ;
+    margin: 1em auto ;
     padding: 0 0;
     text-decoration: none;
-   border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     justify-content: center;
-    
-    
 }
 .p-baner-pint{
     display: none;
@@ -69,15 +68,6 @@ html{
     background-size: cover;
     height: 100%;
     width: 100%;
-}
-.sec-paints:hover h2{
-    opacity:1; 
-   
-}
-.sec-paints:hover{
-    opacity:0.8; 
-    
-   
 }
 .sec-spatulas{
     background-image: url(../../src/assets/images/productos/espatulas\ productos.jpg);
@@ -90,15 +80,6 @@ html{
     padding: 0;
     grid-area: sec-spatulas;
 }
-
-.sec-spatulas:hover h2{
-    opacity:1; 
-    
-}
-.sec-spatulas:hover{
-    opacity:0.8;  
-    
-}
 .sec-brushes{
     background-image: url(../../src/assets/images/productos/pinceles.jpg);
     background-size: cover;
@@ -109,14 +90,6 @@ html{
     margin: 0;
     padding: 0;
     grid-area: sec-brushes;
-}
-.sec-brushes:hover h2{
-    opacity:1; 
-    
-}
-.sec-brushes:hover{
-    opacity:0.8;  
-    
 }
 .sec-canvas{
     background-image: url(../../src/assets/images/productos/lienzo2.jpg);
@@ -130,12 +103,11 @@ html{
     grid-area: sec-canvas;
 }
 
-.sec-canvas:hover h2{
+.sec-paints h2, .sec-spatulas h2, .sec-brushes h2, .sec-canvas h2{
     opacity:1; 
-    
 }
-.sec-canvas:hover{
-    opacity:0.8;  
+.sec-paints, .sec-spatulas, .sec-brushes, .sec-canvas{
+    opacity:0.9;  
     
 }
 .p-sections{
@@ -146,8 +118,6 @@ html{
     "sec-brushes"
     "sec-canvas";
 }
-
-
 
 
 /*---------------------------------header y nav bar-----------------------------------------------------------*/
@@ -351,6 +321,17 @@ footer{
     grid-template-areas: 
     "sec-paints sec-spatulas"
     "sec-brushes sec-canvas";
+}
+.sec-paints h2, .sec-spatulas h2, .sec-brushes h2, .sec-canvas h2{
+    opacity: 0;
+}
+.sec-paints:hover h2, .sec-spatulas:hover h2, .sec-brushes:hover h2, .sec-canvas:hover h2{
+    opacity:1; 
+    
+}
+.sec-paints:hover, .sec-spatulas:hover, .sec-brushes:hover, .sec-canvas:hover{
+    opacity:0.9;  
+    
 }
 
 }
