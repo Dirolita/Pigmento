@@ -37,7 +37,7 @@ html{
     flex-direction: column;
     justify-content: space-around;
 }
-.g-titulo-sec:hover{
+.g-titulo-sec{
     background-color:#f9d54463;
 }
 .g-menu h3:hover{
@@ -589,7 +589,8 @@ footer{
     }
 .g-info-img{
     display: none;
-}    
+}   
+
 }
     
 
